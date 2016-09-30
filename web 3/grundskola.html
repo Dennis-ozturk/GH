@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockholm</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!--Header-->
+<div>
+    <header id="header-banner">
+        <nav class="navbar navbar-default navbar-fixed-top fadeIn" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-box-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <a href="index.html">Räkna ut ditt snitt</a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="dropdown-box-1">
+
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">HEM</a></li>
+                        <li><a href="#aboutus">OM OSS</a></li>
+                        <li class="dropdown" role="presentation">
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div>
+    <section class="aboutus" id="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow bounceInLeft" data-wow-delay="0.1s">
+                        <h2 id="center">Grundskola</h2>
+                    <div class="col-sm-7">
+                        <ul>
+                            <li>Bild</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Biologi</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Engelska</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Fysik</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Geografi</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Hem- och konsumentkunskap</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Historia</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Idrott och hälsa</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Kemi</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Moderna Språk</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Modersmål</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Musik</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Religionskunskap</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Samhällskunskap</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Slöjd</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Svenska</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Svenska som andraspråk</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Teknik</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+                            <li>Teckenspråk för Hörande</li><input onblur="totalt()" type="text" name="count" id="g1"/><br>
+
+                            <br><br>
+                            <li>Totalt</li><input type="text" name="total" id="total"/>
+
+                            <script type="text/javascript">
+                                function totalt() {
+                                    var arr = document.getElementsByName('count');
+                                    var tot = 0;
+                                    for (var i = 0; i < arr.length; i++) {
+                                        if ((arr[i].value.toLowerCase() === "a"))
+                                            tot += 20;
+                                        else if ((arr[i].value.toLowerCase() === "b")) {
+                                            tot += 17.5
+
+                                        } else if (arr[i].value.toLowerCase() === "c") {
+                                            tot += 15
+                                        }else if (arr[i].value.toLowerCase() === "d") {
+                                            tot += 12.5
+                                        }else if (arr[i].value.toLowerCase() === "e") {
+                                            tot += 10
+                                        }else tot += 0; {
+
+                                        }
+                                        document.getElementById('total').value = tot;
+                                    }
+                                }
+
+                            </script>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--End of Information Button-->
+
+<footer id="section-footer">
+    <div class="container wrapper">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <!--<div class="wow fadeIn" data-wow-delay="0.4s">-->
+                <!--<div class="btn-circle-scroll">-->
+                <!--<a href="#header-banner" class="btn-circle">-->
+                <!--<i class="fa fa-angle-double-up animated"></i>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <p>&copy;&nbspCopyright 2015 -  All rights reserved.</p>
+                <p>0737243692 &#124; sthlmo@hotmail.com  </p>
+                <div class="physical-address">
+                </div>
+            </div>
+        </div>
+        </div>
+</footer>
+
+<!--End of Contacut us-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+
+</html>

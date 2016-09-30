@@ -1,0 +1,25 @@
+MyMobileApp Information
+
+App Name:
+Open STHLM
+
+Source files included:
+
+HTML files (.html),
+Style Sheets Files:
+
+Javascript files (.js)
+
+font-awesome.min.css,
+font-awesome.css,
+font.scss,
+fonts.svg:
+
+Bootstrap.js,
+Bootstrap.min.js:
+
+Jquery.easing.min.js,
+Jquery.min.js:
+
+Images:
+*.jpg

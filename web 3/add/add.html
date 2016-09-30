@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>OPEN STOCKHOLM</title>
+
+        <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+        <link rel="stylesheet" href="assets/todo.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Stockholm</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body class="well" style="background-color: #de4949">
+    <!--Inputs of Stores/Phone Number/Opening Hours-->
+    <div id="container" style="background-color: #de4949">
+            <div class="task-list">
+                <h3>Add a Store</h3>
+                <button id="size" type="button"><a href="../index.html">&#10149;</a> </button>
+                <form id="todo-form">
+                    <input type="text" placeholder="Add a Store" />
+                    <textarea placeholder="Phone number"></textarea>
+                    <textarea placeholder="Opening Hours "></textarea>
+                    <input type="button" class="btn btn-primary" value="Add Store" onclick="todo.add();" />
+                </form>
+
+                <input type="button" class="btn btn-primary" value="Clear All" onclick="todo.clear();" />
+
+                <div id="delete-div">
+                    Drag Here to Delete
+                </div>
+            </div>
+
+            <div class="task-list task-container" id="pending">
+                <h3>Your Stores</h3>
+            </div>
+
+            <div style="clear:both;"></div>
+            <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+            <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+            <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+            <script type="text/javascript" src="assets/todo.js"></script>
+
+
+        <!--Function that lets you choose and input stores-->
+            <script type="text/javascript">
+                $( "#datepicker" ).datepicker();
+                $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+            </script>
+        <!--End-->
+        </div>
+    </body>
+</html>
